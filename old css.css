@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  z-index:2;
+}
+.cards {
+  /* card container */
+  display: flex;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding-left:20vw;
+  padding-right:20vw;
+}
+.url {
+  text-decoration: none;
+  color:white;
+}
+
+.url:active {
+  
+  z-index: 1;
+  
+}
+.card {
+  /* single  card */
+  width: 260px;
+  margin: 35px 0px;
+  min-height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transform: scale(0.8);
+  
+  transition: transform 0.5s ease, 
+              box-shadow 0.25s ease,
+              margin 10s ease,
+              filter 0.5s ease;
+  
+}
+.card.active {
+      transform: scale(1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      z-index: 1;
+      margin: auto;
+      
+}
+.image {
+  /* <div class=image/> */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: flex;
+  margin: 12px;
+}
+.image img {
+  /* <img /> */
+  width: 220px;
+  height: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  margin: 0px auto;
+  user-select: none;
+}
+.description {
+  text-align: center;
+  place-content: center;
+  margin: 17px;
+  font-family: "Tagesschrift";
+  font-size: 18px;
+  height:40px;
+}
+
+.button:active{
+  background-color:red;
+}
+.button {
+  background-color:#3D0000;
+  color: white;
+  height: 50px;
+  width: 220px;
+  border-radius: 30px;
+  place-content: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 26px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Tagesschrift";
+  transform: scale(1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  user-select: none;
+  text-decoration: none;
+}
+.button:active {
+  transform: scale(0.8);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.080);
+}
+.title {
+  font-size: 30px;
+  padding: 20px 3px;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #2C2C2C;
+  width: 150px;
+  margin-left: 20px;
+  user-select: none;
+}
+.category {
+  background-size: cover;
+  background-position: center;
+}
+.category:nth-child(6n+3) {
+  .button {
+    background-color: #10443E;
+  }
+  background: linear-gradient(to top, #10443E, #D3EFE9);
+}
+.category:nth-child(6n+1) {
+  .button {
+    background-color: #3C1113;
+  }
+  background: linear-gradient(to top, #3C1113, #F1D4C8);
+}
+.category:nth-child(even) {
+  .title {
+    border-bottom: 5px solid #2C2C2C;
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .cards {
+    flex-direction: row-reverse;
+  }
+  .button {
+    background-color: #2C3862;
+  }
+  display: flex;
+  flex-direction: column;
+}
+.category:nth-child(6n+5) {
+  background: linear-gradient(to top, #4F64B0, #E0EFFF);
+}
+.category:nth-child(2) {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSHHU_BHMhwD01kHaCkLa7H5Y69d3Hw9j43HNoXG8rtCrm4hwPJBnjf2A&s=10');
+}
+.category:nth-child(4) {
+  background-image: url('https://media.istockphoto.com/id/1191744336/photo/young-man-runs-on-mountain-ridge-at-sunrise.jpg?s=612x612&w=0&k=20&c=UMOnFHtEPaux1qF7WrUKj1T8SQP3M_Ng7ns_rimR4to=');
+}
+.category:nth-child(6) {
+  .title {
+    border-bottom: 5px solid #D3D3D3;
+    color: white;
+  }
+  background-image: url('https://media.istockphoto.com/id/1264087743/photo/close-up-of-a-biker-on-a-bike.jpg?s=612x612&w=0&k=20&c=42s7w07FvUuhouZyCUujmLXM40x0IqTXqyN6pJizd28=');
+}
+
+
+
+
+
+
+
