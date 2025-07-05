@@ -31,10 +31,10 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
   background-color: white;
   transform: scale(0.8);
-  transition: transform 0.5s ease, 
-              box-shadow 0.25s ease,
-              margin 10s ease,
-              filter 0.5s ease;
+  transition: transform 0.5s ease,
+    box-shadow 0.25s ease,
+    margin 10s ease,
+    filter 0.5s ease;
 }
 
 .card.active {
@@ -73,7 +73,7 @@
 
 
 .button {
-  background-color:#3D0000;
+  background-color: #3D0000;
   color: white;
   height: 50px;
   width: 220px;
@@ -92,6 +92,7 @@
   user-select: none;
   text-decoration: none;
 }
+
 .button:active {
   transform: scale(0.8);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.080);
@@ -110,13 +111,14 @@
 .category {
   background-size: cover;
   background-position: center;
-  padding-top:30px;
+  padding-top: 30px;
 }
 
 /* Specific Category Styles */
 .category:nth-child(6n+3) {
   background: linear-gradient(to top, #10443E, #D3EFE9);
 }
+
 .category:nth-child(6n+3) .button {
   background-color: #10443E;
 }
@@ -124,6 +126,7 @@
 .category:nth-child(6n+1) {
   background: linear-gradient(to top, #3C1113, #F1D4C8);
 }
+
 .category:nth-child(6n+1) .button {
   background-color: #3C1113;
 }
@@ -132,15 +135,18 @@
   display: flex;
   flex-direction: column;
 }
+
 .category:nth-child(even) .title {
   border-bottom: 5px solid #2C2C2C;
   align-self: flex-end;
   text-align: right;
   margin-right: 10px;
 }
+
 .category:nth-child(even) .cards {
   flex-direction: row-reverse;
 }
+
 .category:nth-child(even) .button {
   background-color: #2C3862;
 }
@@ -160,11 +166,8 @@
 .category:nth-child(6) {
   background-image: url('https://media.istockphoto.com/id/1264087743/photo/close-up-of-a-biker-on-a-bike.jpg?s=612x612&w=0&k=20&c=42s7w07FvUuhouZyCUujmLXM40x0IqTXqyN6pJizd28=');
 }
+
 .category:nth-child(6) .title {
   border-bottom: 5px solid #D3D3D3;
   color: white;
 }
-
-
-
-
